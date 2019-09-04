@@ -1,0 +1,91 @@
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
+.header {
+    display: flex;
+    width: 850px;
+    height: 450px;
+    background-image: url(./Images/nasa-OVO8nK-7Rfs-unsplash.jpg);
+    color:white;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+
+}
+
+.footer { 
+    display: flex;
+    
+    width: 850px;
+    height: 324px;
+    background:lightgray;
+    margin: auto;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.socialmedia {
+    box-sizing: content-box;
+    width: 270px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.officeinfo {
+    box-sizing: content-box;
+    width: 270px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactus {
+    box-sizing: content-box;
+    width: 270px;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    text-align: left;
+    line-height: .5em;
+}
+
+#name {
+    height:30px;
+    
+
+}
+
+#message {
+    height:50px;
+    
+    
+}
+
+input {
+    width: 75%;
+    
+}
+
+#sendbutton {
+    
+    color: white;
+    width: 30%;
+    height: 30px;
+    background:black;
+    
+   
+}
+
+
+
