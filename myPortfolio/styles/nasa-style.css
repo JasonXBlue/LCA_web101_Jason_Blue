@@ -10,7 +10,7 @@ html {
     display: flex;
     width: 850px;
     height: 450px;
-    background-image: url(./Images/nasa-OVO8nK-7Rfs-unsplash.jpg);
+    background-image: url(../images/nasa-OVO8nK-7Rfs-unsplash.jpg);
     color:white;
     font-size: 30px;
     font-family: 'Fjalla One', sans-serif;
