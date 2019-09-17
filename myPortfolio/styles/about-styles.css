@@ -1,0 +1,115 @@
+.body {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+            "head"
+            "footer";
+        min-height:100%;
+        
+}
+
+.footercontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:
+            "about1 about2 about3";
+            min-width:100%;
+        
+}
+
+.header {
+    grid-area:head;
+    display:flex;
+    background-image: url("../images/aboutbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.title {
+    display:inline-block;
+    color:ghostwhite;
+    font-family: 'Chilanka', cursive;
+    font-size:8em;
+    line-height:560px;
+}
+
+
+
+.footer{
+    grid-area:footer;
+    display:flex;
+    background:white;
+   
+}
+
+.about1 {
+    grid-area:about1;
+    display:flex;
+    background-image:url("../images/aboutrain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background:white;
+    margin:auto;
+    height:50%;
+    border-top-style: solid;
+    border-top-width:40px;
+    
+}
+
+.about2 {
+    grid-area:about2;
+    display:flex;
+    background-image:url("../images/aboutrain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background:white;
+    margin:auto;
+    height:50%;
+    border-top-style: solid;
+    border-top-width:40px;
+}
+
+.about3 {
+    grid-area:about3;
+    display:flex;
+    background-image:url("../images/aboutrain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background:white;
+    margin:auto;
+    height:50%;
+    border-top-style: solid;
+    border-top-width:40px;
+}
