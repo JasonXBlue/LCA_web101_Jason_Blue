@@ -59,7 +59,7 @@
 .about1 {
     grid-area:about1;
     display:flex;
-    background-image:url("../images/aboutrain.jpg");
+    background-color:black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -68,18 +68,19 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background:white;
+    background:transparent;
     margin:auto;
     height:50%;
     border-top-style: solid;
     border-top-width:40px;
+    border-color:lightblue;
     
 }
 
 .about2 {
     grid-area:about2;
     display:flex;
-    background-image:url("../images/aboutrain.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,17 +89,18 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background:white;
+    background:transparent;
     margin:auto;
     height:50%;
     border-top-style: solid;
     border-top-width:40px;
+    border-color: orange;
 }
 
 .about3 {
     grid-area:about3;
     display:flex;
-    background-image:url("../images/aboutrain.jpg");
+    background-color:black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -107,9 +109,28 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background:white;
+    background:transparent;
     margin:auto;
     height:50%;
     border-top-style: solid;
     border-top-width:40px;
+    border-color:lightgreen;
+}
+
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    
+    color:blue;
+}
+
+.title1 {
+    color:ghostwhite;
+    margin-bottom: auto;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    text-align: center;
 }
