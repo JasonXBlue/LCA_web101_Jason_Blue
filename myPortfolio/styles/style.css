@@ -46,8 +46,33 @@ body {
     border: 2px solid black;
     background: darkgray;
     padding: 20px; 
+    animation-duration: 10s;
+    animation-direction: reverse;
   }
-  
+
+
+
+  .Intro {
+    font-size:10em;
+    color:ghostwhite;
+    grid-column: 2/3;
+    margin: 3% auto;
+    animation-name: fadeInOut;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+  }
+      
+  @keyframes fadeInOut {
+      from {
+      opacity: 1;
+      }
+      
+      to {
+      opacity: 0;
+      }
+      }
+
+
   nav {
     display: flex;
     justify-content: flex-end;
