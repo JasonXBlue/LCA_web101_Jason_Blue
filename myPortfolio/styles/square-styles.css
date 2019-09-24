@@ -1,0 +1,60 @@
+
+html {
+    min-height:100%;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    margin: auto auto;
+    margin-top:2px;  
+}
+.square1 {
+    background:green;
+}
+.square2{
+    background:grey;
+}
+.square3 {
+    background:red;
+}
+.square4 {
+    background:blue;
+}
+.square5{
+    background:yellow;
+}
+.square6{
+    background:gold;
+}
+.square7{
+    background:purple;
+}
+.square8{
+    background:olive;
+}
+.square9{
+    background:orange;
+}
+.square10{
+    background:blueviolet;
+}
+.square11{
+    background:cyan;
+}
+.square12{
+    background:slategray;
+}
+
+.wrapper:hover .odd {
+    transform: scale(2,2) translateX(300px) rotate(360deg);
+    transition: all 5.0s ease;
+}
+.wrapper:hover .even {
+    transform: scale(.5,.5) translateX(-1400px) rotate(-360deg);
+    transition: all .5s ease-in;
+}
+
+.wrapper {
+    margin-top:160px;
+}
