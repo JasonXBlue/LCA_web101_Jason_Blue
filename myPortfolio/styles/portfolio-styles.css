@@ -6,6 +6,7 @@ body {
     text-align:center;
     margin:auto auto;
     padding:0; 
+    height:100%;
 }
 html {
   height:100%;
@@ -74,6 +75,7 @@ iframe {
       "main main main main"
       "main main main main"
       "footer footer footer footer";
+      height:100%;
         
         
 }
