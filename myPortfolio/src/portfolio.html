@@ -1,66 +1,91 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/portfolio-styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <div class = "container">
+    <div class="wrapper">
 
-        <header class="header">
+        <header>
             <h1>My Portfolio</h1>
+
         </header>
+
+        <main>
+            <div class="box1">
+                    <div class="dash thumbnail" > 
+                            <iframe src="./dashboard.html" name="dashboard" frameborder="0" class="frame-area" scrolling="no">
+                            <a href="./dashboard.html" target="dashboard">Dashboard</a>
+                                </iframe>  
+                                <a href="./dashboard.html">Dashboard</a>    
+                    </div>
+
+
+            </div>
+
+            <div class="box2">
+                    <div class="nasa thumbnail">
+                            <iframe src="./nasa.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
+                            <a href="./nasa.html">Nasa</a>    
+                    </div>
+
+            </div>
+
+            <div class="box3">
+                    <div class="hair thumbnail"></div>>
+                    <iframe src="./hair1.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
+                    <a href="hair1.html">Hair</a>
         
-        <main class="main">
-                <div class="thumbnail-container">
-                        <div class="thumbnail">
-                            <div class="dash"> 
-                                <iframe src="./dashboard.html" name="dashboard" frameborder="0" ></iframe>
-                                <p><a href="./dashboard.html" target="dashboard">Dashboard</a></p>
-                            </div>
-                            <div class="nasa">
-                                <iframe src="./nasa.html" frameborder="0" ></iframe>
-                            </div>
-                            <div class="hair"></div>>
-                                <iframe src="./hair1.html" frameborder="0" ></iframe>
-                            </div>
-                        </div>
-                      </div>
 
-            <!--<iframe id="dashboard"
-                title="dashboard"
-                width="400"
-                height="300"
-                src = "./dashboard.html" scrolling="no" frameborder=0>
-                
-            </iframe>
-
-            <iframe id="nasa"
-                title="Nasa landing page"
-                width="400"
-                height="300"
-                src = "./nasa.html" scrolling="no" frameborder=0>
-            </iframe>
-
-            <iframe id="hair"
-                title="hair landing page"
-                width="400"
-                height="300"
-                src = "./hair.html" scrolling="no" frameborder=0>
-            </iframe>
-           
-                     <a href="./dashboard.html" class = "projectlink">Dashboard</a>
-                    <a href="./nasa.html" class = "projectlink">Nasa landing page</a>
-                    <a href="./hair.html" class = "projectlink" > Hair landing page</a> -->
-
+            </div>
         </main>
-        <footer class="footer">
+
+        <main1>
+            <div class="box4">
+                    <div class="moving-squares thumbnail"></div>
+                    <iframe src="./moving-squares.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
+                    <a href="moving-squares.html">Moving-Squares</a>
+
+
+            </div>
+
+
+            <div class="box5">
+                    <video width="400" height="300" controls>
+                            <source src="../videos/SampleVideo.mp4" type="video/mp4">
+                            
+                    </video>
+
+            </div>
+
+            <div class="box6">
+                    <form action="/action_page.php" method="get">
+                        Email: <input type="text" name="email"><br>
+                        Name: <input type="text" name="name"><br>
+                        Location: <input type="text" name="location"><br>
+                        Message: <input type="text" name="message"><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                      </form>
+
+
+            </div>   
+        </main1> 
+
+
+        <footer>
 
         </footer>
-        
+
+
+
+
     </div>
+    
 </body>
 </html>

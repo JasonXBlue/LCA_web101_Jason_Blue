@@ -1,0 +1,107 @@
+
+body {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    margin:auto auto;
+    padding:0; 
+    height:100%;
+}
+html {
+  height:100%;
+}
+
+.header {
+    grid-area: header;
+    font-family: 'Indie Flower', cursive;
+    font-size:2em;
+    background: grey;
+}
+
+.main {
+  grid-area:main;
+  background:red;
+  height:600px;
+ 
+
+}
+
+.footer{
+  grid-area:footer;
+  background:green;
+  
+}
+
+iframe {
+    border: 1px solid black;
+    
+}
+
+.thumbnail iframe {
+    width: 1440px;
+    height: 900px;
+  }
+
+  .thumbnail {
+    position: relative;
+    -ms-zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+  }
+
+  .thumbnail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+      height:100%;
+        
+        
+}
+
+.thumbnail-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "dash hair nasa";
+  min-width:100%;
+  
+
+}
+
+.dash {
+  grid-area:dash;
+  background:red;
+}
+
+.nasa {
+  grid-area:nasa;
+  background:green;
+}
+
+.hair {
+  grid-area:hair;
+  background:yellow;
+}
