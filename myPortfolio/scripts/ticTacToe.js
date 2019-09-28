@@ -1,17 +1,17 @@
 var gameMarker = "x";
 
-function changeMarkerToX() {
-  var gameMarker = "x";
+function changeMarkerToX(ID) {
+  var gameMarker = "X";
   console.log("The x button was clicked!");
 }
 
-function changeMarkerToO() {
-  var gameMarker = "0";
+function changeMarkerToO(ID) {
+  var gameMarker = "O";
   console.log("The o button was clicked!");
 }
 
 var xTurn = true;
-function placeMarker(ID) {
+function placeMark(ID) {
   if (xTurn) {
     document.getElementById(ID).innerHTML = "x";
   } else {

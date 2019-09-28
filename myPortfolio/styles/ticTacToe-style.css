@@ -6,6 +6,7 @@
   min-height: 100%;
 }
 .wrapper {
+  background-color: #e6e3e2;
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -17,73 +18,98 @@
     ". box1 box2 box3 ."
     ". box4 box5 box6 ."
     ". box7 box8 box9 ."
-    ". . nav nav ."
+    ". . nav nav1 ."
     "footer footer footer footer footer";
 }
 header {
   grid-area: header;
 }
 
+.title {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  font-size: 3em;
+  color: #81c784;
+}
+
 #box1 {
   grid-area: box1;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-right: 4px dashed ghostwhite;
+  border-left: 8px solid white;
+  border-top: 8px solid white;
 }
 #box2 {
   grid-area: box2;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-right: 4px dashed ghostwhite;
+  border-top: 8px solid white;
 }
 #box3 {
   grid-area: box3;
-  border-bottom: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-top: 8px solid white;
+  border-right: 8px solid white;
 }
 #box4 {
   grid-area: box4;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-right: 4px dashed ghostwhite;
+  border-left: 8px solid white;
 }
 #box5 {
   grid-area: box5;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-right: 4px dashed ghostwhite;
 }
 #box6 {
   grid-area: box6;
-  border-bottom: 4px solid black;
+  border-bottom: 4px dashed ghostwhite;
+  border-right: 8px solid white;
 }
 #box7 {
   grid-area: box7;
-  border-right: 4px solid black;
+  border-right: 4px dashed ghostwhite;
+  border-bottom: 8px solid white;
+  border-left: 8px solid white;
 }
 #box8 {
   grid-area: box8;
-  border-right: 4px solid black;
+  border-right: 4px dashed ghostwhite;
+  border-bottom: 8px solid white;
 }
 #box9 {
   grid-area: box9;
+  border-bottom: 8px solid white;
+  border-right: 8px solid white;
 }
 
 .square {
-  background-color: slategrey;
+  background-color: #424242;
 }
 
 #Obutton {
+  display: flex;
   width: 100px;
   font-size: 2em;
   color: ghostwhite;
-  background-color: black;
+  background-color: #81c784;
+  border: white double 2px;
+  margin-left: auto;
+  text-align: right;
 }
 #Xbutton {
   width: 100px;
   font-size: 2em;
   color: ghostwhite;
-  background-color: black;
+  background-color: #81c784;
+  border: white double 2px;
 }
+
 nav {
   grid-area: nav;
 }
-.nav1 {
+nav1 {
   grid-area: nav1;
 }
 footer {
