@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/portfolio-styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/portfolio-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
 
-        <header>
-            <h1>My Portfolio</h1>
+      <main>
+        <div class="box1">
+          <div class="dash thumbnail">
+            <a href="./dashboard.html" target="dashboard"
+              >Dashboard
+              <iframe
+                src="./dashboard.html"
+                name="dashboard"
+                frameborder="0"
+                class="frame-area"
+                scrolling="no"
+              >
+              </iframe>
+            </a>
+            <a href="./dashboard.html">Dashboard</a>
+          </div>
+        </div>
 
-        </header>
+        <div class="box2">
+          <div class="nasa thumbnail">
+            <iframe
+              src="./nasa.html"
+              frameborder="0"
+              class="frame-area"
+              scrolling="no"
+            ></iframe>
+            <a href="./nasa.html">Nasa</a>
+          </div>
+        </div>
 
-        <main>
-            <div class="box1">
-                    <div class="dash thumbnail" > 
-                            <iframe src="./dashboard.html" name="dashboard" frameborder="0" class="frame-area" scrolling="no">
-                            <a href="./dashboard.html" target="dashboard">Dashboard</a>
-                                </iframe>  
-                                <a href="./dashboard.html">Dashboard</a>    
-                    </div>
+        <div class="box3">
+          <div class="hair thumbnail"></div>
+          >
+          <iframe
+            src="./hair1.html"
+            frameborder="0"
+            class="frame-area"
+            scrolling="no"
+          ></iframe>
+          <a href="hair1.html">Hair</a>
+        </div>
+      </main>
 
+      <main1>
+        <div class="box4">
+          <div class="moving-squares thumbnail"></div>
+          <iframe
+            src="./moving-squares.html"
+            frameborder="0"
+            class="frame-area"
+            scrolling="no"
+          ></iframe>
+          <a href="moving-squares.html">Moving-Squares</a>
+        </div>
 
-            </div>
+        <div class="box5">
+          <video width="400" height="300" controls>
+            <source src="../videos/SampleVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-            <div class="box2">
-                    <div class="nasa thumbnail">
-                            <iframe src="./nasa.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
-                            <a href="./nasa.html">Nasa</a>    
-                    </div>
+        <div class="box6">
+          <form action="/action_page.php" method="get">
+            Email: <input type="text" name="email" /><br />
+            Name: <input type="text" name="name" /><br />
+            Location: <input type="text" name="location" /><br />
+            Message: <input type="text" name="message" /><br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </form>
+        </div>
+      </main1>
 
-            </div>
-
-            <div class="box3">
-                    <div class="hair thumbnail"></div>>
-                    <iframe src="./hair1.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
-                    <a href="hair1.html">Hair</a>
-        
-
-            </div>
-        </main>
-
-        <main1>
-            <div class="box4">
-                    <div class="moving-squares thumbnail"></div>
-                    <iframe src="./moving-squares.html" frameborder="0" class="frame-area" scrolling="no"></iframe>
-                    <a href="moving-squares.html">Moving-Squares</a>
-
-
-            </div>
-
-
-            <div class="box5">
-                    <video width="400" height="300" controls>
-                            <source src="../videos/SampleVideo.mp4" type="video/mp4">
-                            
-                    </video>
-
-            </div>
-
-            <div class="box6">
-                    <form action="/action_page.php" method="get">
-                        Email: <input type="text" name="email"><br>
-                        Name: <input type="text" name="name"><br>
-                        Location: <input type="text" name="location"><br>
-                        Message: <input type="text" name="message"><br>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                      </form>
-
-
-            </div>   
-        </main1> 
-
-
-        <footer>
-                        <a href="ticTacToe.html">TicTacToe</a>
-
-        </footer>
-
-
-
-
+      <footer>
+        <div>
+          <a href="ticTacToe.html">TicTacToe</a>
+          <iframe
+            src="TicTacToe.html"
+            frameborder="0"
+            class="frame-area"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <div>
+          <a
+            href="https://jasonxblue.github.io/checkpoint2-BaconIpsum/landingpage.html"
+            >BaconIpsum</a
+          >
+          <iframe
+            src="https://jasonxblue.github.io/checkpoint2-BaconIpsum/landingpage.html"
+            frameborder="0"
+            class="frame-area"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
