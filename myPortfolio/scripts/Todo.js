@@ -2,11 +2,11 @@ $(function() {
   let $list = $("ul");
   let $newItemForm = $("myInput");
 
-  $newItemForm.on("addBtn", function(e) {
+  $newItemForm.on("submit", function(e) {
     e.preventDefault();
-    let text = $('text.input[type="text"]').val();
+    let text = $('input.myInput[type="text"]').val();
     $list.append(`<li>${text}</li>`);
-    $('text.input[type="text"]').val("");
+    $('input.myInput[type="text"]').val("");
   });
 
   $list.on("click", "li", function() {
