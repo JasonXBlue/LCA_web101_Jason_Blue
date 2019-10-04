@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/stress-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stress Reliever Game</title>
+  </head>
+  <body>
+    <div class="wrappergame">
+      <left1>
+        <div id="space">Frankenstein's Candy Factory</div>
+      </left1>
+      <main1>
+        <div id="candy" onclick="candyClick()">
+          <img
+            src="https://media.giphy.com/media/l41lMQiIyGtHPAMX6/giphy.gif"
+            width="200px"
+          />
+        </div>
+      </main1>
+
+      <right1>
+        <div id="upgradeLevel"></div>
+      </right1>
+
+      <left2>
+        <p>Number of Candy Corn:</p>
+        <div id="numbers"></div>
+      </left2>
+
+      <main2>
+        <p>Intructions: Click the candy corn - this makes more candy corn.</p>
+        <p>
+          You will AUTOMATICALLY upgrade according the following table of
+          upgrade costs! :)
+        </p>
+      </main2>
+
+      <right2>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>How many candy corn can it make?</td>
+            <td>cost</td>
+          </tr>
+
+          <tr>
+            <td>Frankenstein!</td>
+            <td>Frankenstein make 2x's as much!</td>
+            <td>30 candy corn!</td>
+          </tr>
+
+          <tr>
+            <td>Factory</td>
+            <td>Factory makes 10x's as much!</td>
+            <td>500 candy corn!</td>
+          </tr>
+
+          <tr>
+            <td>Plant</td>
+            <td>Plant makes 30x's as much!</td>
+            <td>1,000 candy corn!</td>
+          </tr>
+
+          <tr>
+            <td>SuperPlant</td>
+            <td>SuperFactory makes 1000x's as much!</td>
+            <td>100,000 candy corn!</td>
+          </tr>
+        </table>
+      </right2>
+    </div>
+    <script src="../scripts/stress.js"></script>
+  </body>
+</html>
