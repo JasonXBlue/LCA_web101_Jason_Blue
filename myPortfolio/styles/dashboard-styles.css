@@ -9,13 +9,15 @@ body {
 
 .container {
   display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: repeat(4fr);
   grid-template-areas:
-    "header"
-    "main"
-    "aside"
-    "nav"
-    "aside"
-    "footer";
+    "aside1 header aside"
+    ". . ."
+    ". main ."
+    ". . ."
+    "nav . ."
+    "footer footer footer";
 }
 
 header {
@@ -46,7 +48,7 @@ aside1 {
   margin-top: 100px;
   height: 200px;
   background-color: ghostwhite;
-  text-align: left;
+  text-align: center;
   margin-left: 10px;
 }
 .locbttn {
@@ -274,7 +276,7 @@ input {
   color: #e0b612;
 }
 
-@media (min-width: 320px) {
+/*@media (min-width: 320px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -294,10 +296,11 @@ input {
 @media (min-width: 976px) {
   .container {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: repeat(3fr);
+    grid-template-rows: repeat(4fr);
     grid-template-areas:
       "header header header"
       "nav . aside"
-      "aside1 main aside";
+      "aside1 main aside"
+      "footer footer footer";
   }
-}
+}*/
