@@ -1,3 +1,4 @@
+/*site background image*/
 body {
   background-image: url("../images/mountains.jpg");
   background-repeat: no-repeat;
@@ -12,7 +13,7 @@ body {
 html {
   max-width: 100%;
 }
-
+/*main body container/grid setup*/
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -31,27 +32,46 @@ header {
   background: none;
   height: 50px;
 }
-
+/*Greeting*/
 main {
   grid-area: main;
   font-family: "Roboto", sans-serif;
   color: black;
   margin-top: 100px;
 }
-
+/*Clock*/
 aside {
   grid-area: aside;
   display: flex;
 }
-
+/*GeoLocation*/
 .aside1 {
   grid-area: aside1;
   background-color: transparent;
 }
+/*Calculator*/
 .calc1 {
   grid-area: right1;
 }
+/*ToDoList*/
+nav {
+  grid-area: nav;
+  display: flex;
+}
+/*footer styles*/
+footer {
+  grid-area: footer;
+  background: grey;
+  height: 500px;
+  width: 400px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
 
+/*GeoLocation styles*/
 .location {
   border: 1px solid black;
   margin-top: 10px;
@@ -60,7 +80,7 @@ aside {
   text-align: center;
   margin-left: 10px;
 }
-
+/*Clock styles*/
 .clock {
   color: whitesmoke;
   margin-top: 10px;
@@ -77,22 +97,6 @@ h1 {
   color: ghostwhite;
 }
 
-nav {
-  grid-area: nav;
-  display: flex;
-}
-
-footer {
-  grid-area: footer;
-  background: grey;
-  height: 500px;
-  width: 400px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
 /*To do list styles */
 
 /* Include the padding and border in an element's total width and height */
@@ -305,34 +309,44 @@ input {
   box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #b00000;
 }*/
 
-/*@media (min-width: 320px) {
+@media (min-width: 320px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "header"
+      "aside1"
+      "aside"
       "main"
+      "calc1"
       "nav"
-      "aside";
+      "footer";
   }
 }
 @media (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "main main"
-      "nav aside";
+      "header header"
+      "aside1 aside"
+      ". main"
+      "calc1 ."
+      ". nav"
+      "footer footer";
   }
 }
 @media (min-width: 976px) {
   .container {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: repeat(4fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px repeat(3, 1fr) 600px;
     grid-template-areas:
       "header header header"
-      "nav . aside"
-      "aside1 main aside"
+      "aside1 . aside"
+      ". main ."
+      ". . calc1"
+      "nav . ."
       "footer footer footer";
   }
-}*/
+}
 
 /*Stress Reliever Game Styles*/
 .bodygame {
@@ -353,6 +367,42 @@ input {
   grid-template-areas:
     "left1 main1 right1"
     "left2 main2 right2";
+}
+
+@media (min-width: 320px) {
+  .wrappergame {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left1"
+      "left2"
+      "main1"
+      "main2"
+      "right1"
+      "right2";
+  }
+}
+
+@media (min-width: 768px) {
+  .wrappergame {
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "left1 left2"
+      "main1 main2"
+      "right1 right2";
+  }
+}
+
+@media (min-width: 968px) {
+  .wrappergame {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+      "left1 main1 right1"
+      "left2 main2 right2";
+  }
 }
 
 .left1 {
