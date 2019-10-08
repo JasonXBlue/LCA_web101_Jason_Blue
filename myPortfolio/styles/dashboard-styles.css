@@ -24,7 +24,7 @@ html {
     ". main ."
     ". . calc1"
     "nav . ."
-    "footer footer footer";
+    ". . footer .";
 }
 
 header {
@@ -61,13 +61,7 @@ nav {
 /*footer styles*/
 footer {
   grid-area: footer;
-  background: grey;
-  height: 500px;
-  width: 400px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -331,160 +325,46 @@ input {
       ". main"
       "calc1 ."
       ". nav"
-      "footer footer";
+      ". footer";
   }
 }
 @media (min-width: 976px) {
   .container {
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px repeat(3, 1fr) 600px;
+    grid-template-rows: 50px repeat(4, 1fr);
     grid-template-areas:
       "header header header"
       "aside1 . aside"
       ". main ."
       ". . calc1"
       "nav . ."
-      "footer footer footer";
+      ". . footer";
   }
 }
-
-/*Stress Reliever Game Styles*/
-.bodygame {
-  padding-top: 30px;
-  font-family: Arial;
-  background-color: orange;
-  width: 100%;
-  height: 500px;
-  text-align: center;
+/*game styles*/
+#board {
+  display: flex;
+}
+.column {
+  width: 50px;
+  height: 300px;
+  background-color: darkgrey;
+  border-right: 1px solid ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.wrappergame {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 10px;
-  row-gap: 10px;
-  grid-template-areas:
-    "left1 main1 right1"
-    "left2 main2 right2";
-}
-
-@media (min-width: 320px) {
-  .wrappergame {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "left1"
-      "left2"
-      "main1"
-      "main2"
-      "right1"
-      "right2";
-  }
-}
-
-@media (min-width: 768px) {
-  .wrappergame {
-    grid-template-columns: 2fr;
-    grid-template-areas:
-      "left1 left2"
-      "main1 main2"
-      "right1 right2";
-  }
-}
-
-@media (min-width: 968px) {
-  .wrappergame {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-areas:
-      "left1 main1 right1"
-      "left2 main2 right2";
-  }
-}
-
-.left1 {
-  grid-area: left1;
-}
-.left2 {
-  grid-area: left2;
-}
-.main1 {
-  grid-area: main1;
-}
-.main2 {
-  grid-area: main2;
-}
-.right1 {
-  grid-area: right1;
-}
-.right2 {
-  grid-area: right2;
-}
-
-p {
-  font-size: 20px;
-  color: white;
-  display: block;
-  margin: 5px;
-}
-
-#space {
-  margin: auto;
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 5px;
-  font-size: 30px;
-  font-family: "Creepster", cursive;
-  border: 5px solid;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  width: 389px;
-  height: 60px;
-}
-
-table {
-  margin-top: 10px;
-  border: 2px solid;
-  border-radius: 5px;
-}
-
-td {
-  border: 1px solid;
-}
-
-#numbers {
-  margin: auto;
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  font-size: 30px;
-  border: 5px solid;
-  border-radius: 10px;
-  background-color: white;
-  width: 200px;
-  height: 60px;
-}
-
-#upgradeLevel {
-  margin: auto;
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-family: "Creepster", cursive;
-  border: 5px solid;
-  border-radius: 10px;
-  background-color: yellow;
-  width: 300px;
+.piece {
   height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
 
-.game {
-  width: 100%;
-  height: 600px;
-  border: double 14px ghostwhite;
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
 }
