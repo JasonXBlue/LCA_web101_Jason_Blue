@@ -23,8 +23,8 @@ html {
     "aside1 . aside"
     ". main ."
     ". . calc1"
-    "nav . ."
-    ". . footer .";
+    "nav . footer"
+    ". . . .";
 }
 
 header {
@@ -324,8 +324,8 @@ input {
       "aside1 aside"
       ". main"
       "calc1 ."
-      ". nav"
-      ". footer";
+      "nav footer"
+      ". .";
   }
 }
 @media (min-width: 976px) {
@@ -337,8 +337,8 @@ input {
       "aside1 . aside"
       ". main ."
       ". . calc1"
-      "nav . ."
-      ". . footer";
+      "nav . footer"
+      ". . .";
   }
 }
 /*game styles*/
